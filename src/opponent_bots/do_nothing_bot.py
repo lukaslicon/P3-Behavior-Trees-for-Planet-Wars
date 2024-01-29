@@ -6,26 +6,11 @@ currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentfram
 parentdir = os.path.dirname(currentdir)
 sys.path.append(parentdir)
 
-from src.planet_wars import PlanetWars, issue_order, finish_turn
+from planet_wars import PlanetWars, finish_turn
 
 
 def do_turn(state):
-    # (1) If we currently have a fleet in flight, just do nothing.
-    if len(state.my_fleets()) >= 1:
-        return
-
-    # (2) Find my strongest planet.
-    strongest_planet = max(state.my_planets(), key=lambda p: p.num_ships, default=None)
-
-    # (3) Find the weakest enemy or neutral planet.
-    weakest_planet = min(state.not_my_planets(), key=lambda p: p.num_ships, default=None)
-
-    if not strongest_planet or not weakest_planet:
-        # No legal source or destination
-        return
-
-    # (4) Send half the ships from my strongest planet to the weakest planet that I do not own.
-    issue_order(state, strongest_planet.ID, weakest_planet.ID, strongest_planet.num_ships/2)
+    return
 
 
 if __name__ == '__main__':
@@ -45,6 +30,6 @@ if __name__ == '__main__':
 
     except KeyboardInterrupt:
         print('ctrl-c, leaving ...')
-    except:
+    except Exception:
         traceback.print_exc(file=sys.stdout)
         logging.exception("Error in bot.")

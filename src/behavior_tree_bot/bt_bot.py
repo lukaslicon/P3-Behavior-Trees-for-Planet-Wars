@@ -16,7 +16,7 @@ from behavior_tree_bot.behaviors import *
 from behavior_tree_bot.checks import *
 from behavior_tree_bot.bt_nodes import Selector, Sequence, Action, Check
 
-from src.planet_wars import PlanetWars, finish_turn
+from planet_wars import PlanetWars, finish_turn
 
 
 # You have to improve this tree or create an entire new one that is capable
