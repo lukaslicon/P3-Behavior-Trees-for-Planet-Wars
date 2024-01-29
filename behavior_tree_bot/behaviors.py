@@ -1,6 +1,6 @@
 import sys
 sys.path.insert(0, '../')
-from planet_wars import issue_order
+from src.planet_wars import issue_order
 
 
 def attack_weakest_enemy_planet(state):

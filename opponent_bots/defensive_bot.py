@@ -7,7 +7,7 @@ parentdir = os.path.dirname(currentdir)
 sys.path.append(parentdir)
 
 
-from planet_wars import PlanetWars, issue_order, finish_turn
+from src.planet_wars import PlanetWars, issue_order, finish_turn
 
 
 def spread(state):
