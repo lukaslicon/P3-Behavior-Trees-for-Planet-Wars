@@ -1,0 +1,89 @@
+
+Selector: High Level Ordering of Strategies
+| Sequence: Defend Strategy
+| | Check: have_largest_fleet
+| | Action: defend
+| Sequence: Spread Strategy
+| | Check: if_neutral_planet_available
+| | Action: spread
+| Sequence: Spread Strategy
+| | Check: if_neutral_planet_available
+| | Action: spread
+| Sequence: Attack Strategy
+| | Check: if_enemy_planet_available
+| | Action: attack
+
+
+Selector: High Level Ordering of Strategies
+| Sequence: Defend Strategy
+| | Check: have_largest_fleet
+| | Action: defend
+| Sequence: Spread Strategy
+| | Check: if_neutral_planet_available
+| | Action: spread
+| Sequence: Spread Strategy
+| | Check: if_neutral_planet_available
+| | Action: spread
+| Sequence: Attack Strategy
+| | Check: if_enemy_planet_available
+| | Action: attack
+
+
+Selector: High Level Ordering of Strategies
+| Sequence: Defend Strategy
+| | Check: have_largest_fleet
+| | Action: defend
+| Sequence: Spread Strategy
+| | Check: if_neutral_planet_available
+| | Action: spread
+| Sequence: Spread Strategy
+| | Check: if_neutral_planet_available
+| | Action: spread
+| Sequence: Attack Strategy
+| | Check: if_enemy_planet_available
+| | Action: attack
+
+
+Selector: High Level Ordering of Strategies
+| Sequence: Defend Strategy
+| | Check: have_largest_fleet
+| | Action: defend
+| Sequence: Spread Strategy
+| | Check: if_neutral_planet_available
+| | Action: spread
+| Sequence: Spread Strategy
+| | Check: if_neutral_planet_available
+| | Action: spread
+| Sequence: Attack Strategy
+| | Check: if_enemy_planet_available
+| | Action: attack
+
+
+Selector: High Level Ordering of Strategies
+| Sequence: Defend Strategy
+| | Check: have_largest_fleet
+| | Action: defend
+| Sequence: Spread Strategy
+| | Check: if_neutral_planet_available
+| | Action: spread
+| Sequence: Spread Strategy
+| | Check: if_neutral_planet_available
+| | Action: spread
+| Sequence: Attack Strategy
+| | Check: if_enemy_planet_available
+| | Action: attack
+
+
+Selector: High Level Ordering of Strategies
+| Sequence: Defend Strategy
+| | Check: have_largest_fleet
+| | Action: defend
+| Sequence: Spread Strategy
+| | Check: if_neutral_planet_available
+| | Action: spread
+| Sequence: Spread Strategy
+| | Check: if_neutral_planet_available
+| | Action: spread
+| Sequence: Attack Strategy
+| | Check: if_enemy_planet_available
+| | Action: attack
