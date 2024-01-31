@@ -19,7 +19,6 @@ def spread(state):
         target_planet = next(target_planets)
         while True:
             required_ships = target_planet.num_ships + 1
-
             if my_planet.num_ships > required_ships:
                 issue_order(state, my_planet.ID, target_planet.ID, required_ships)
                 my_planet = next(my_planets)
@@ -44,7 +43,7 @@ def attack(state):
         target_planet = next(target_planets)
         while True:
             required_ships = target_planet.num_ships + \
-                                 state.distance(my_planet.ID, target_planet.ID) * target_planet.growth_rate + 1
+                state.distance(my_planet.ID, target_planet.ID) * target_planet.growth_rate + 1
 
             if my_planet.num_ships > required_ships:
                 issue_order(state, my_planet.ID, target_planet.ID, required_ships)
