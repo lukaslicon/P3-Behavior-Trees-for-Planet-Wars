@@ -29,7 +29,7 @@ def setup_behavior_tree():
     defend_action = Action(defend)
     defend_sequence.child_nodes = [largest_fleet_check, defend_action]
 
-    root.child_nodes = [spread_sequence, attack_sequence, defend_sequence]
+    root.child_nodes = [defend_sequence, spread_sequence, spread_sequence, attack_sequence]
 
     logging.info('\n' + root.tree_to_string())
     return root
